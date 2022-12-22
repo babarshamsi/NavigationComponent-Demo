@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentB">
+
+    <TextView
+        android:id="@+id/amountTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#2196F3"
+        android:textSize="16sp"
+        android:text="Please add amount"
+        android:layout_marginStart="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextFragmentB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+   <EditText
+       android:id="@+id/editTextFragmentB"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       app:layout_constraintStart_toEndOf="@+id/amountTxtView"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       android:layout_marginEnd="20dp"
+       android:layout_marginStart="20dp"
+       android:digits="0123456789"
+       android:inputType="number"
+       android:background="#D3D3D3"/>
+
+
+    <Button
+        android:id="@+id/goToNextScreenBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Next Screen"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/blue"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFragmentB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
